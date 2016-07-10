@@ -13,6 +13,26 @@ There's also some Javascript for displaying the results on a pretty map using [L
 
 You can see the final result at [www.regrexitmap.eu](http://www.regrexitmap.eu/)
 
+## Usage
+
+The ```mapreduce.py``` inside the ```process``` can be used to simplify the GeoJSON feature outlines. It simplifies the constituency outlines by removing random points in a way that retains the overall coherence of the boundaries (it will only remove sensible points, and the points will be removed from all boundaries that share the same point).
+
+The simplification process can take a long time, but because it's stochastic, running it iteratively on a simplified file has the same effect as running it on the original file, but with increasing speed.
+
+The ```gendata.py``` file will pull in the postcode data, referendum results and petition signature to calculate the level of regrexit for each parliamentary constituency. The file ```change.js``` it outputs can be then be used for rendering the site (by replacing the ```site/data/change.js``` file).
+
+The ```site``` folder contains everything needed to render the site. The site is entirely server-side static -- all of the dynamic work happens on the client-side, or is outsourced to Mapbox -- so there's no fancy installation procedure. Just copy the files to some webspace.
+
+## Sources
+
+* Referendum results [data](https://interactive.guim.co.uk/2016/06/eureferendum/booted/data/full.json) from the [Guardian](https://interactive.guim.co.uk/2016/06/eureferendum/booted/main.html).
+* Petition [data](https://petition.parliament.uk/petitions/131215) from the UK Government and Parliament
+* Martin Chorley's constituency GeoJSON [boundary data](https://github.com/martinjc/UK-GeoJson) 
+* Map rendering code from [LeafletJS](LeafletJS: http://leafletjs.com/examples/quick-start.html)
+* Tiled map images from [Mapbox](https://www.mapbox.com/)
+* Postcode [data](https://census.edina.ac.uk/pds.html) from the UK Data Service Census Support
+* Typeface design by [Philipp Hubert and Sebastian Fischer](http://hubertfischer.com/work/type-rubik)
+
 ## Copyright licences
 
 Because this is basically just an exercise in data correlation, data is used from many different sources. They all have their own peculiar licences. The ```copyright`` folder contains the details.
