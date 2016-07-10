@@ -1,7 +1,8 @@
 Visit: https://petition.parliament.uk/petitions/131215
+This licence text: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 
 # Open Government License for public sector information
-delivered by The National Archives
+delivered by [The National Archives](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/licensing-for-re-use/)
 [Back to The National Archives](https://www.nationalarchives.gov.uk/information-management/uk-gov-licensing-framework.htm)
 
 You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
@@ -62,15 +63,15 @@ This licence is governed by the laws of the jurisdiction in which the Informatio
 
 In this licence, the terms below have the following meanings:
 
-### 'Information' means information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.
+'Information' means information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.
 
-### 'Information Provider' means the person or organisation providing the Information under this licence.
+'Information Provider' means the person or organisation providing the Information under this licence.
 
-### 'Licensor' means any Information Provider which has the authority to offer Information under the terms of this licence or the Controller of Her Majesty's Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights and Information subject to copyright and database right that has been assigned to or acquired by the Crown, under the terms of this licence.
+'Licensor' means any Information Provider which has the authority to offer Information under the terms of this licence or the Controller of Her Majesty's Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights and Information subject to copyright and database right that has been assigned to or acquired by the Crown, under the terms of this licence.
 
-### 'Use' means doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.
+'Use' means doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.
 
-### 'You', 'you' and 'your' means the natural or legal person, or body of persons corporate or incorporate, acquiring rights in the Information (whether the Information is obtained directly from the Licensor or otherwise) under this licence.
+'You', 'you' and 'your' means the natural or legal person, or body of persons corporate or incorporate, acquiring rights in the Information (whether the Information is obtained directly from the Licensor or otherwise) under this licence.
 
 ## About the Open Government Licence
 
@@ -86,8 +87,8 @@ Further context, best practice and guidance can be found in the [UK Government L
 
 Open Government License for public sector information
 
-[Go to the version 1 of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/)
-[Go to the version 2 of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/)
-[Go to the Welsh version of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence-cymraeg/version/3/)
+* [Go to the version 1 of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/)
+* [Go to the version 2 of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/)
+* [Go to the Welsh version of the licence.](https://www.nationalarchives.gov.uk/doc/open-government-licence-cymraeg/version/3/)
 
 
