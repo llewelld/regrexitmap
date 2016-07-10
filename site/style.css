@@ -1,0 +1,210 @@
+@import url(fonts/fonts.css);
+
+body {
+	background: #f0f7ff;
+}
+
+h1 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 140%;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+h2 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 110%;
+}
+
+p {
+	font-family: 'Rubik', sans-serif;
+	font-size: 85%;
+	line-height: 100%;
+}
+
+#regioninfo table tr td {
+	font-family: 'Rubik', sans-serif;
+	font-size: 85%;
+	line-height: 100%;
+	vertical-align: top;
+	padding-bottom: 1px;
+}
+
+#leftbar {
+	display: table-cell;
+	width: 50%;
+	vertical-align: top;
+	padding: 0px;
+}
+
+#rightbar {
+	display: table-cell;
+	width: 50%;
+	vertical-align: top;
+}
+
+#map {
+	display: table-cell;
+	box-shadow: 0 0 4px #000000;	
+}
+
+#mapid {
+	width: 600px;
+	height: 900px;
+	display: inline-block;
+}
+
+#regioninfo {
+	display: block;
+	border: 1px solid white;
+	width: 280px;
+	min-height: 100px;
+	border-radius: 8px;
+	box-shadow: 0 0 4px #555555;	
+	padding: 8px 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	background: white;
+}
+
+#mapinfo {
+	border: 1px solid white;
+	width: 280px;
+	min-height: 100px;
+	border-radius: 8px;
+	box-shadow: 0 0 4px #555555;
+	padding: 8px 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	padding-bottom: 0px;
+	background: white;
+}
+
+.accept {
+	color: #0000ff;
+}
+
+.regret {
+	color: #999900;
+}
+
+.badge {
+	margin-top: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.equation {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#details {
+	border: 1px solid white;
+	max-width: 584px;
+	min-height: 100px;
+	border-radius: 16px;
+	box-shadow: 0 0 4px #555555;
+	padding: 8px 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	background: white;
+}
+
+#loading {
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 16px;
+	box-shadow: 0 0 4px #555555;
+	width: 200px;
+	min-height: 80px;
+	display: block;
+	z-index: 100;
+	position: relative;
+	left: 200px;
+	top: 400px;
+	padding: 8px 8px;
+	background: #ffffff;
+}
+
+.discuss {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Responsive elements */
+
+@media only screen and (max-width: 1280px) {
+	#regioninfo {
+		position: absolute;
+		right: 16px;
+		display: block;
+	}
+
+	#mapinfo {
+		width: 584px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#centre {
+		position: absolute;
+		left: 0px;
+		top: 932px;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 624px) {
+	#mapid {
+		width: 100%;
+	}
+
+	#map {
+		width: 600px;
+	}
+
+	#regioninfo {
+		position: absolute;
+		right: 16px;
+		display: block;
+	}
+	
+	#leftbar, #rightbar {
+		width: 0px;
+	}
+	
+	#centre {
+		position: absolute;
+		left: 0px;
+		top: 932px;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	#mapinfo {
+		position: relative;
+		margin-left: 8px;
+		margin-right: 8px;
+		width: auto;
+	}
+	
+	#loading {
+		top: 400px;
+		position: absolute;
+		left: 0px;
+		width: 32%;
+		margin-left: 34%;
+		margin-right: 34%;
+		top: 408px;
+		margin-top: 8px;
+	}
+}
+

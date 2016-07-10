@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//TFP//DTD HTML 4.0 Transitional Margins//EN" "http://www.flypig.co.uk/dtds/margins.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Regrexit Map Details</title>
+		<meta name="viewport" content="initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery-3.0.0.js"></script>
+
+	</head>
+	<body>
+		<div id="details">
+			<h1>Regrexit Map Detail</h1>
+
+			<p/>How were the levels of regrexit on the map calculated? Read on to find out.
+
+			<p/><h2>Data</h2>
+
+			<p/>We combined the number of <i>remain</i> votes cast in each Local Authority District (LAD) with the number of <i>names</i> added to the petition in each Parliamentary Constituency (PCON) calling for a second EU Referendum.
+
+			<p/>The referendum results were extracted from the <a href="https://interactive.guim.co.uk/2016/06/eureferendum/booted/main.html">Guardian website</a>. The petition resuls were taken from the government's official <a href="https://petition.parliament.uk/petitions/131215">petition website</a>.
+
+			<p/>PCON boundaries were provided by Martin Chorley's <a href="https://github.com/martinjc/UK-GeoJson">GeoJSON</a> Data. Conversion between LAD and PCON regions was provided by the UK Data Service <a href="https://census.edina.ac.uk/pds.html">Census Support</a>.
+
+			<p/><h2>Calculation</h2>
+
+			<p/>To establish the level <i>x</i> of regrexit we first calculate <i>E</i>, the expected number of names on the petition in a PCON. This is determined using the following formula.
+
+			<p/><img class="equation" src="images/expected.png"/>
+
+			<p/>where <i>r</i> is the number of remain votes in the containing LAD, <i>R</i> is the total number of remain votes cast in the referendum, <i>S</i> is the total number of names added to the petition, <i>P</i> is the area of the PCON and <i>L</i> is the area of its containing LAD.
+			<p/>Having calculated this we can then calculated the level of regrexit as the proportion between the expected and actual number of names on the petition as follows.
+
+			<p/><img class="equation" src="images/x.png"/>
+
+			<p/>where <i>s</i> is the actual number of names on the petition for the particular PCON.
+			<p/>The resulting value allows us to measure whether the electorate has changed its mind or not since the referendum result. A value <i>x</i> &lt; 1.0 suggests that there was a consolidation of the result for that region. A value <i>x</i> &gt; 1.0 suggests a level of regret over the result. A value of <i>x</i> &asymp; 1.0 suggests that the number of names on the petition is in line with the remain vote in the referendum.
+
+			<p/><h2>Assumptions</h2>
+
+			<p/>In practice we're making a lot of assumptions in this calculation. We assume that across the country the level of regret broadly cancels out; in other words, we are really only measuring the relative level of regret across the regions. We also have to assume that adding a name to the petition suggests dissatisfaction with the result in a particular constituency (rather than the final result as a whole).
+			<p/>The assumption that the ratio between the names on the petition and remain votes is a measure of satisfaction/dissatisfaction with the result is also questionable. For example, it could simply be that there are disparities between the disposition to sign a petition in one region compared to another.
+			<p/>The data on referendum votes is provided per LAD, whereas the petition data is provided per PCON. We therefore have to approximate the number of referendum votes by distributing them in proportion to the relative size of each PCON within the larger LAD. We use the relative number of postcodes in each region for this, which isn't an ideal measure, but should provide a reasonable approximation.
+			<p/>It's also worth pointing out that our analysis ignores the number of <i>leave</i> votes entirely. This is an unfortunate consequence of the fact we only have data on how many people want a rerun of the referendum (there's no petition calling for parliament <i>not</i> to have a second referendum).
+			<p/>In short, we have to make a <i>lot</i> of assumptions. By the time we reach a final number, the application of a decent quantity of salt is advisable.
+
+			<p/><h2>Where are the values for Northern Ireland?</h2>
+			<p/>For some reason the Guardian data didn't contain the details for Northern Ireland or other territories outside Great Britain such as Gibralta, so we weren't able to generate results for these areas.
+
+			<p/><h2>Copyright notices</h2>
+
+			<p/>The sourcecode used to crunch the data and display the map is available on <a href="https://github.com/llewelld/regrexitmap">GitHub</a>.
+
+			<p/>Mapping imagery is provided by <a href="https://www.mapbox.com/studio/welcome/">Mapbox</a> and map data by <a href="http://openstreetmap.org/">OpenStreetMap</a>. The brilliant <a href="http://leafletjs.com/">LeafletJS<a/> is used to render the maps.
+
+			<p/>Contains Ordnance Survey, Office of National Statistics, National Records Scotland and LPS Intellectual Property data &copy; Crown copyright and database right [2016]. Data licensed under the terms of the Open Government Licence (<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3</a>). Ordnance Survey data covered by OS OpenData Licence. Any further sub-licences must retain this attribution.
+
+			<p/><h2>Who's responsible for this?</h2>
+			<p/>
+			<a href="http://www.flypig.co.uk"><img class="discuss" src="images/www.png" alt="www"></a>
+			<a href="mailto:david@flypig.co.uk"><img class="discuss" src="images/email.png" alt="email"></a>
+			<a href="https://github.com/llewelld/regrexitmap"><img class="discuss" src="images/github.png" alt="github"></a>
+			<a href="https://twitter.com/flypigahoy"><img class="discuss" src="images/twitter.png" alt="twitter"></a>
+
+			<p/><a href="index.html">Back to the map</a>
+
+		</div>
+	</body>
+</html>
+
+

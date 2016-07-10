@@ -1,0 +1,11 @@
+Visit: https://census.edina.ac.uk/pds.html
+
+Directory version: November 2015
+Search summary: AB,AL,B,BA,BB,BD,BH,BL,BN,BR,BS,BT,CA,CB,CF,CH,CM,CO,CR,CT,CV,CW,DA,DD,DE,DG,DH,DL,DN,DT,DY,E,EC,EH,EN,EX,FK,FY,G,GL,GU,GY,HA,HD,HG,HP,HR,HS,HU,HX,IG,IM,IP,IV,JE,KA,KT,KW,KY,L,LA,LD,LE,LL,LN,LS,LU,M,ME,MK,ML,N,NE,NG,NN,NP,NR,NW,OL,OX,PA,PE,PH,PL,PO,PR,RG,RH,RM,S,SA,SE,SG,SK,SL,SM,SN,SO,SP,SR,SS,ST,SW,SY,TA,TD,TF,TN,TQ,TR,TS,TW,UB,W,WA,WC,WD,WF,WN,WR,WS,WV,YO,ZE
+Format: Comma Separated Value
+Compression: Zip
+
+Files:
+nspd_2015_11.csv
+
+This data is provided by the UK Data Service with the support of the ESRC and uses material which is copyright of the Crown.

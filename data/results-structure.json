@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Aberdeen",
+    "id": "1",
+    "declarationTime": "2016-06-24T03:09:10+01:00",
+    "declarationTimeNo": 1466734150,
+    "electorate": 154262,
+    "turnout": 104714,
+    "percentageTurnout": 67.88,
+    "majority": 23256,
+    "percentageMajority": 22.21,
+    "winningPercentage": 61.105000000000004,
+    "winningAnswerText": "Remain a member of the EU",
+    "answers": [
+      {
+        "winning": "true",
+        "text": "Remain a member of the EU",
+        "shortText": "Remain",
+        "votes": 63985,
+        "percentageShare": 61.1
+      },
+      {
+        "winning": "false",
+        "text": "Leave the EU",
+        "shortText": "Leave",
+        "votes": 40729,
+        "percentageShare": 38.9
+      }
+    ],
+    "gss": "S12000033"
+  },
+
+...
+
+  {
+    "name": "York",
+    "id": "382",
+    "declarationTime": "2016-06-24T05:25:19+01:00",
+    "declarationTimeNo": 1466742319,
+    "electorate": 155157,
+    "turnout": 109600,
+    "percentageTurnout": 70.64,
+    "majority": 17634,
+    "percentageMajority": 16.09,
+    "winningPercentage": 58.045,
+    "winningAnswerText": "Remain a member of the EU",
+    "answers": [
+      {
+        "winning": "true",
+        "text": "Remain a member of the EU",
+        "shortText": "Remain",
+        "votes": 63617,
+        "percentageShare": 58.04
+      },
+      {
+        "winning": "false",
+        "text": "Leave the EU",
+        "shortText": "Leave",
+        "votes": 45983,
+        "percentageShare": 41.96
+      }
+    ],
+    "gss": "E06000014"
+  }
+]
+

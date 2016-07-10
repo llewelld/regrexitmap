@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//TFP//DTD HTML 4.0 Transitional Margins//EN" "http://www.flypig.co.uk/dtds/margins.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Regrexit Map</title>
+		<meta name="viewport" content="initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="leaflet/v0.7.7/leaflet.css" />
+		<script src="js/jquery-3.0.0.js"></script>
+		<script src="leaflet/v0.7.7/leaflet.js"></script>
+
+	</head>
+	<body>
+		<div id="leftbar">
+			<div id="centre">
+				<div id="mapinfo">
+					<h1>Regrexit Map</h1>
+
+					<p/>On 23rd June the British public voted with a majority of 51.9% to 48.1% to leave the EU. Many were shocked at the result, expressing <a href="https://twitter.com/search?q=%23REGREXIT">regrexit</a> for the outcome.
+					<p/>Over four million people signed a <a href="https://petition.parliament.uk/petitions/131215">petition</a> calling for a second chance at the referendum.
+
+					<p/><h2>Interact</h2>
+					<p/>This map shows the level of regrexit for each constituency. Click on the map to see the details for each.
+
+					<p/><h2>What does it all mean?</h2>
+					<p/>Each constituency is shaded between <span class="accept">blue</span> and <span class="regret">yellow</span>.
+					<p/><span class="accept">Blue</span> (regrexit value between 0.0 and 1.0) indicates the population accepts the result in the constituency.
+					<p/><span class="regret">Yellow</span> (regrexit value greater than 1.0) indicates the population regrets the result.
+
+					<p/><h2>How is it calculated?</h2>
+					<p/>We compare the referendum results against the number of people who signed the petition. For each constituency we calculate the number of signatures we would expect given the remain votes cast in the area and compare it against the number of actual names on the petition. The regrexit value is then calculated as:
+					<p style="text-align: center;"/><i>Regrexit</i> = <i>signatures</i> / <i>Expected</i>.
+					<p/>We have to make a few assumptions, which you can find in the <a href="details.html">full details</a>.
+
+					<p/><h2>Are you serious?</h2>
+					<p/>No, not really. We actually have to make a few too many assumptions. Maybe there's a hint of truth in the numbers, but that's for you to decide.
+
+					<p/><h2>Who's responsible for this?</h2>
+					<p/>
+					<a href="http://www.flypig.co.uk"><img class="discuss" src="images/www.png" alt="www"></a>
+					<a href="mailto:david@flypig.co.uk"><img class="discuss" src="images/email.png" alt="email"></a>
+					<a href="https://github.com/llewelld/regrexitmap"><img class="discuss" src="images/github.png" alt="github"></a>
+					<a href="https://twitter.com/flypigahoy"><img class="discuss" src="images/twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+		<div id="map">
+			<div id="mapid"><span id="loading"><h1>Loading</h1><p/>Please wait...<span></div>
+		</div>
+		<div id="rightbar">
+			<div id="regioninfo">
+				<h1>Regrexit Region</h1>
+				<table>
+					<tr><td>Constituency: </td><td><span id="pcon">United Kingdom</span></td></tr>
+					<tr><td>LAD: </td><td><span id="lad">United Kingdom</span></td></tr>
+					<tr><td>MP: </td><td><span id="mp">--</span></td></tr>
+					<tr><td>Remain: </td><td><span id="remain">16,141,241 (48.1%)</span></td></tr>
+					<tr><td>Leave: </td><td><span id="leave">17,410,742 (51.9%)</span></td></tr>
+					<tr><td>Signatures: </td><td><span id="sigs">4,126,892</span></td></tr>
+					<tr><td>Regrexit: </td><td><span id="regrexit">1.0</span></td></tr>
+					<tr><td></td><td><img id="badge" src="images/none.png"></td></tr>
+				</table>
+
+			</div>
+		</div>
+
+		<script src="js/map.js"></script>
+	</body>
+</html>
+
+

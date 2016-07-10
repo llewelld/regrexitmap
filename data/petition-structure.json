@@ -1,0 +1,59 @@
+{
+   "links" : {
+      "self" : "https://petition.parliament.uk/petitions/131215.json"
+   },
+   "data" : {
+      "type" : "petition",
+      "id" : 131215,
+      "attributes" : {
+         "additional_details" : "",
+         "signature_count" : 3355204,
+         "created_at" : "2016-05-23T23:39:38.957Z",
+         "action" : "EU Referendum Rules triggering a 2nd EU Referendum",
+         "state" : "open",
+         "government_response_at" : null,
+         "updated_at" : "2016-06-26T17:25:03.503Z",
+         "debate_threshold_reached_at" : "2016-06-24T10:48:23.281Z",
+         "rejected_at" : null,
+         "signatures_by_country" : [
+            {
+               "code" : "AF",
+               "name" : "Afghanistan",
+               "signature_count" : 15
+            }
+
+			...
+
+         ],
+         "closed_at" : null,
+         "scheduled_debate_date" : null,
+         "background" : "We the undersigned call upon HM Government to implement a rule that if the remain or leave vote is less than 60% based a turnout less than 75% there should be another referendum.",
+         "rejection" : null,
+         "signatures_by_constituency" : [
+            {
+               "name" : "Edinburgh East",
+               "signature_count" : 5686,
+               "ons_code" : "S14000022",
+               "mp" : "Tommy Sheppard MP"
+            },
+
+			...
+
+            {
+               "ons_code" : "S14000021",
+               "name" : "East Renfrewshire",
+               "signature_count" : 3697,
+               "mp" : "Kirsten Oswald MP"
+            }
+         ],
+         "government_response" : null,
+         "moderation_threshold_reached_at" : "2016-05-24T15:58:22.999Z",
+         "open_at" : "2016-05-25T11:19:56.925Z",
+         "creator_name" : "William Oliver Healey",
+         "debate" : null,
+         "debate_outcome_at" : null,
+         "response_threshold_reached_at" : "2016-06-24T06:54:57.319Z"
+      }
+   }
+}
+

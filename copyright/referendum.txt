@@ -1,0 +1,8 @@
+Visit: https://interactive.guim.co.uk/2016/06/eureferendum/booted/main.html
+
+Referendum results from The Guardian
+
+Results data from: https://interactive.guim.co.uk/2016/06/eureferendum/booted/data/full.json
+See: https://interactive.guim.co.uk/2016/06/eureferendum/booted/main.html
+
+
