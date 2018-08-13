@@ -28,14 +28,14 @@ The ```site``` folder contains everything needed to render the site. The site is
 * Referendum results [data](https://interactive.guim.co.uk/2016/06/eureferendum/booted/data/full.json) from the [Guardian](https://interactive.guim.co.uk/2016/06/eureferendum/booted/main.html).
 * Petition [data](https://petition.parliament.uk/petitions/131215) from the UK Government and Parliament
 * Martin Chorley's constituency GeoJSON [boundary data](https://github.com/martinjc/UK-GeoJson) 
-* Map rendering code from [LeafletJS](LeafletJS: http://leafletjs.com/examples/quick-start.html)
+* Map rendering code from [LeafletJS](http://leafletjs.com/examples/quick-start.html)
 * Tiled map images from [Mapbox](https://www.mapbox.com/)
 * Postcode [data](https://census.edina.ac.uk/pds.html) from the UK Data Service Census Support
 * Typeface design by [Philipp Hubert and Sebastian Fischer](http://hubertfischer.com/work/type-rubik)
 
 ## Copyright licences
 
-Because this is basically just an exercise in data correlation, data is used from many different sources. They all have their own peculiar licences. The ```copyright`` folder contains the details.
+Because this is basically just an exercise in data correlation, data is used from many different sources. They all have their own peculiar licences. The ``copyright`` folder contains the details.
 
 ## Data files
 
